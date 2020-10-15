@@ -1,0 +1,66 @@
+/* The container */
+.radio {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    /* cursor: pointer; */
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.radio input {
+    position: absolute;
+    opacity: 0;
+    /* cursor: pointer; */
+}
+
+/* Create a custom checkbox */
+.radio .checkmark {
+    position: absolute;
+    top: -7px;
+    left: 0px;
+
+    width: 25px;
+    background-color: #eee;
+    color: #ccc;
+    font-size: 20px;
+}
+
+/* On mouse-over, add a grey background color */
+.radio:hover input ~ .checkmark {
+    background-color: #ccc;
+    color: #dedede;
+}
+
+/* When the checkbox is checked, add a blue background */
+.radio input:checked ~ .checkmark {
+    background-color: #06dc79;
+    color: #fff;
+}
+.radio .checkmarkNotApproved {
+    position: absolute;
+    top: 8px;
+    left: 0px;
+
+    width: 25px;
+    background-color: #eee;
+    color: #ccc;
+    font-size: 20px;
+}
+
+/* On mouse-over, add a grey background color */
+.radio:hover input ~ .checkmarkNotApproved {
+    background-color: #ccc;
+    color: #dedede;
+}
+
+/* When the checkbox is checked, add a blue background */
+.radio input:checked ~ .checkmarkNotApproved {
+    background-color: #dd4b40;
+    color: #fff;
+}

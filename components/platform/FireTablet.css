@@ -1,0 +1,21 @@
+label {
+    color: #999;
+    font-size: 14px;
+    font-family: HelveticaNeue;
+    margin-right: 5px;
+}
+.Placement {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 18px;
+    top: -12px;
+
+    background-color: #ededed;
+}
+
+@media print {
+    .Placement {
+        display: none;
+    }
+}

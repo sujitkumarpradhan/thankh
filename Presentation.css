@@ -1,0 +1,162 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #1b2531;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: white;
+    font-family: "Helvetica Neue";
+    font-weight: 300;
+    font-size: 3vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+.Navigation {
+    background-color: #36475b;
+    padding: 28px;
+    color: white;
+}
+.Navigation a {
+    padding: 40px 40px 31px 40px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+}
+.Navigation a:hover {
+    color: #ccc;
+    background-color: #283544;
+}
+.Navigation a:active {
+    color: #f49a05;
+    background-color: #283544;
+}
+
+.Brand-header {
+    background-color: #1b2531;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.FilterAlt {
+    color: #5389b5;
+    right: 20vw;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.FilterInputAlt {
+    height: 40px;
+    background: #34465b;
+    border: 1px solid #4e637a;
+    border-radius: 3px !important;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
+
+.sendMailButton {
+    color: white;
+    padding: 12px;
+    background: #36475b;
+    border: none;
+    font-size: 12px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 3px !important;
+    cursor: pointer;
+}
+.sendMailButton:focus {
+    color: white;
+    font-size: 12px;
+    background: #36475b;
+    text-decoration: none;
+}
+
+.sendMailButton:hover {
+    color: white;
+    font-size: 12px;
+    background: #1c4370;
+    text-decoration: none;
+}
+.blockSendButton {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.loaderMain {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    vertical-align: middle;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0;
+    z-index: 1;
+    margin: auto;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.marginAutp {
+    margin: auto;
+}
+
+.override {
+    display: block !important;
+    margin: 0 auto !important;
+    border-color: red !important;
+}
+
+.clonePresentationText{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    vertical-align: middle;
+    display: flex;
+    top: 0;
+    z-index: 1;
+    margin: auto;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 23px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

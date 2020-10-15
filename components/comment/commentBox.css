@@ -1,0 +1,11 @@
+.CommentBox {
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(18, 18, 16, 0.523);
+    bottom: 0;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
