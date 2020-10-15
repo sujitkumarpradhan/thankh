@@ -1,0 +1,123 @@
+.MobileWrapper a {
+    position: "absolute";
+    top: 363px;
+    left: 568px;
+    font-size: 30px;
+    color: "#999";
+}
+
+.MobileWrapper a:hover {
+    color: #666;
+}
+.approval {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.switch {
+    position: relative;
+    /* top: 371px;
+    left: 512px; */
+    display: inline-block;
+    width: 90px;
+    height: 34px;
+    /* top: -43px;
+    left: 110px; */
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1175c5;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 6px;
+    bottom: 4px;
+    font-size: 12px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.text {
+    color: #fff;
+    font-size: 12px;
+}
+
+.text:after {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    content: "Main";
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+.text:before {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    content: "Backup";
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.switch input:checked + .slider {
+    background-color: #0c5c9c;
+}
+
+.switch input:focus + .slider {
+    box-shadow: 0 0 1px #0c5c9c;
+}
+
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(52px);
+    -ms-transform: translateX(52px);
+    transform: translateX(52px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.switch input + .slider + .text:after {
+    opacity: 1;
+}
+.switch input + .slider + .text:before {
+    opacity: 0;
+}
+
+.switch input:checked + .slider + .text:after {
+    opacity: 0;
+}
+
+.switch input:checked + .slider + .text:before {
+    opacity: 1;
+}
+.comment {
+    color: #d8e7f8;
+    text-decoration: none;
+    padding-left: 4px;
+    text-shadow: -1px -1px 0 #337ab7, 1px -1px 0 #337ab7, -1px 1px 0 #337ab7,
+        1px 1px 0 #337ab7;
+    -webkit-text-stroke: 1px #337ab7;
+}

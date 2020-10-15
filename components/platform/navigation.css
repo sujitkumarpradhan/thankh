@@ -1,0 +1,21 @@
+.subNavigation {
+    background-color: #283544;
+    padding: 16px;
+    color: white;
+}
+.subNavigation a {
+    padding: 16px 24px 16px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+}
+.subNavigation a:hover {
+    color: #ccc;
+    background-color: #131a22;
+}
+.subNavigation a:active {
+    color: #f49a05;
+    background-color: #131a22;
+}

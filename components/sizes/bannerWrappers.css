@@ -1,0 +1,40 @@
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot:focus {
+    background-color: #79b1d6;
+}
+.dot:hover {
+    background-color: #717171;
+}
+.destinationButton {
+    color: #fff;
+    font-size: 12px;
+    border: 2px solid #0a3365;
+    border-radius: 3px;
+    background-color: #1a4c7f;
+    padding: 6px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.destinationEdit {
+    color: #1a4c7f;
+    font-size: 13px;
+    background: none;
+    border: none;
+    padding: 6px;
+}
+.destinationEdit:focus {
+    outline: none;
+}
+.destination ::placeholder {
+    color: #ccc;
+    font-size: 20px;
+}
