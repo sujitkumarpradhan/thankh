@@ -1,0 +1,330 @@
+
+.tabbutton{
+    padding: 5px 20px;
+    margin: 15px 15px;
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: .6px;
+    border-radius: 6px;
+}
+
+
+  .navigation_home {
+    display: flex;
+    padding: 0 5%;
+    float: left;
+}
+.navigation_home ul {
+    list-style: outside none none;
+    width: 100%;
+    padding-left: 0;
+    margin: 3vw 0;
+}
+.navigation_home ul li {
+    display: inline-block;
+
+    font-size: 18px;
+    font-weight: 300;
+}
+.navigation_home ul li a {
+    float: left;
+    padding: 0 40px 0 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #009ee1;
+    text-decoration: none;
+}
+.navigation_home ul li a:hover {
+    float: left;
+    padding: 0 40px 0 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+    text-decoration: none;
+}
+.navigation_home ul li a:active {
+    float: left;
+    padding: 0 40px 0 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #009ee1;
+    text-decoration: none;
+}
+
+/* BANNER PAGE */
+
+.logoTitle{
+    margin: 5% 0 3% 0;
+}
+
+.aboutLogo{
+    margin: 0 0 2% 0;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+    color: #2d2d2d;
+}
+/* ART BOARD */
+.bottomMargin {
+    margin: 10px 0 70px 0;
+}
+
+.logoThankhues{
+    width: 34%;
+}
+
+.wrapperToCard{
+    display: flex;
+    justify-content: center;
+}
+
+.artImg{
+    position: absolute;
+    left: 0;
+    clip: rect(0px,250px,300px,0px);
+    height: 100%;
+    cursor: pointer;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    /* margin: 1% */
+}
+
+.cardBack {
+    width: 250px;
+    background: #efeeee;
+    height: 300px;
+    padding: 20px;
+    display: table;
+    cursor: pointer;
+}
+
+.cardBack-copy{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cardBack-title{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.clap-number{
+    opacity: 0.2;
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 36px;
+    margin: 38px 0 0 0;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.clap-text{
+    opacity: 0.2;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 7px 0 0 0;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+
+@media (min-width: 1920px) {
+    .container {
+        width: 1300px;
+    }
+}
+/* FLIP ANIMATION (NOT USE) */ 
+
+.flip-container {
+	perspective: 1000px;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+    width: 250px;
+    height: 300px;
+    display: inline-block;
+    /* margin: 1%; */
+    margin: 0 3% 2% 0;
+    outline: 1px solid #d4d4d4;
+    outline-offset: 3px;
+}
+
+.flipper {
+	transition: 0.7s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	/* for firefox*/
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
+	transform: rotateY(180deg);
+}
+
+
+
+
+/* Image view animation*/
+.hide {
+    display: none;
+  }
+  
+  #gallerly.container {
+    margin-bottom: 150px;
+  }
+  
+  #gallerly .image-viewer {
+    position: relative;
+  }
+  
+  #gallerly .image-viewer .preview {
+    position: absolute;
+    width: 100%;
+    background-color: #1D1D1D;
+    border: 1px solid #f1f1f1;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 18px;
+    border-radius: 5px;
+    margin-bottom: 80px;
+  }
+  
+  #gallerly .image-viewer .preview img {
+    float: left;
+    height: 300px;
+    margin-right: 15px;
+  }
+  
+  #gallerly .image-viewer > a > img {
+    position: absolute !important;
+      left: 0;
+      clip: rect(0px,250px,300px,0px);
+      height: 100%;
+      cursor: pointer;
+  }
+  
+  #gallerly .image-viewer > a {
+    cursor: pointer;
+      border: none;
+      /* padding: 3px; */
+      margin: 5px;
+      display: inline-block;
+      width: 250px;
+      height: 300px;
+  }
+  
+  /* #gallerly .image-viewer > a:hover {
+    border: none;
+  
+  } */
+  
+  #gallerly * {
+    position: relative;
+    -webkit-transition: all 0.15s ease;
+      -moz-transition: all 0.15s ease;
+      -ms-transition: all 0.15s ease;
+      -o-transition: all 0.15s ease;
+      transition: all 0.15s ease;
+  }
+  
+  #gallerly .thumbnail.move-down {
+    top: 346px;
+  }
+  
+  #gallerly .preview .description {
+  }
+  
+  #gallerly .preview a {
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+  }
+  
+  #gallerly .preview .wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #gallerly .preview .close-preview {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+  }
+  
+  #gallerly .preview .prev {
+    position: absolute;
+    left: 6px;
+    top: 50%
+  }
+  
+  #gallerly .preview .next {
+    position: absolute;
+    right: 6px;
+    top: 50%
+  }
+  
+  #gallerly .preview .preview-content {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+  
+  #gallerly .preview .title {
+    color: #ccc;
+  }
+  
+  #gallerly .preview .description {
+    color: rgba(204, 204, 204, 0.57);
+  }
+  
+  #gallerly .preview .arrow {
+    border-bottom: 10px solid #222;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    position: absolute;
+    top: -10px;
+    width: 0;
+  } 
+
+  .margin-bottom-G{
+      margin-bottom: 500px !important;
+  }
+
+
+  .headerTabbutton{
+    background: #fff;
+    color: #333;
+    border-color: #ccc;
+    border-radius: 4px;
+    border: 1px solid #0000005c;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+
+  .headerTabbuttonSelect{
+    background: #6C7FF2;
+  }
